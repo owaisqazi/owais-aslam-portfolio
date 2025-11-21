@@ -1,0 +1,28 @@
+.logo-site , .logoImage{
+ position: absolute;
+    top: 10%;
+    left: 2%;
+    height: 100%;
+    width: 100px;
+    object-fit: contain;
+}
+@media (max-width: 768px) and (min-width:300px) {
+  .logo-site , img{
+          position: absolute;
+        top: 10%;
+        left: 2%;
+        height: inherit;
+        width: 64px;
+        object-fit: contain;
+}
+}
+@media (max-width: 1200px) and (min-width:800px) {
+  .logo-site , img{
+          position: absolute;
+        top: 10%;
+        left: 2%;
+        height: inherit;
+        width: 64px;
+        object-fit: contain;
+}
+}
