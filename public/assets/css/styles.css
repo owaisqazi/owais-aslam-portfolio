@@ -4560,7 +4560,7 @@ button.animate-btn::after,
 @media (min-width: 1200px) {
   .section-process .swiper-process {
     overflow: visible;
-    padding-left: 100px;
+    padding-left: 22px;
   }
   .section-process .swiper-wrapper {
     display: flex;
@@ -4586,7 +4586,7 @@ button.animate-btn::after,
     z-index: 2;
   }
   .section-process .wg-process {
-    max-width: 509px;
+    max-width: 100%;
   }
   .section-process .wg-process:hover {
     transform: translateY(-10px);
