@@ -1,6 +1,21 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
+import Swiper from "swiper";
+
 
 const Home = () => {
+  useEffect(() => {
+  new Swiper(".swiper-process", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".tf-pag-nav",
+      clickable: true,
+    },
+    allowTouchMove: true,
+  });
+}, []);
+
   return (
     <>
       <main id="wrapper">
@@ -507,6 +522,7 @@ const Home = () => {
                       width={424}
                       height={530}
                       src="https://imgv2-1-f.scribdassets.com/img/document/638533542/original/fe4813301e/1716437620?v=1"
+                      className='FrontendDevelopment'
                       alt="Frontend Development"
                     />
                   </div>
@@ -548,6 +564,7 @@ const Home = () => {
                     width={212}
                     height={265}
                     src="https://imgv2-1-f.scribdassets.com/img/document/638533542/original/fe4813301e/1716437620?v=1"
+                    className='FrontendDevelopment'
                     alt="Frontend Development"
                   />
                 </div>
@@ -556,12 +573,21 @@ const Home = () => {
               {/* UI/UX Design & Branding */}
               <div className="wg-service-2">
                 <div className="main-image">
-                  <div className="image">
+                  <div className="image" id='UIUX'>
                     <img
                       loading="lazy"
                       width={424}
                       height={530}
                       src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/fb65cc151474857.630cee080e74a.jpg"
+                      alt="UI/UX Design"
+                    />
+                  </div>
+                  <div className="image" id='UIUXDesign'>
+                    <img
+                      loading="lazy"
+                      width={424}
+                      height={530}
+                      src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/19cfa6118456891.6089761b94f99.png"
                       alt="UI/UX Design"
                     />
                   </div>

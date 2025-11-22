@@ -7,7 +7,7 @@ const Header = () => {
                 <div className="header-inner">
                             <div className="col-6 col-md-1">
                                 <a href="#" className="logo-site">
-                                   <img src="/assets/images/logo/logo.png" alt="Owais Aslam Logo"/>
+                                   <img className={"logo-site-image1"} src="/assets/images/logo/logo.png" alt="Owais Aslam Logo"/>
                                 </a>
                             </div>
                     <div className="container">
@@ -80,7 +80,7 @@ const Header = () => {
                             <div className="offcanvas-content_wrapin">
                                 <div className="canvas_head">
                                     <a href="" className="logo-site">
-                                       <img src="/assets/images/logo/logo.png" alt="" />
+                                       <img className={"logo-site-image1"} src="/assets/images/logo/logo.png" alt="" />
                                     </a>
                                     <div className="btn-mobile-menu close-mb-menu text-caption link">
                                         <i className="icon icon-close" />
