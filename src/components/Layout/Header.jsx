@@ -79,7 +79,7 @@ const Header = () => {
                         <div className="container h-100">
                             <div className="offcanvas-content_wrapin">
                                 <div className="canvas_head">
-                                    <a href="" className="logo-site">
+                                    <a href="#" className="logo-site">
                                        <img className={"logo-site-image1"} src="/assets/images/logo/logo.png" alt="" />
                                     </a>
                                     <div className="btn-mobile-menu close-mb-menu text-caption link">

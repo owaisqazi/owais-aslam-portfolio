@@ -6,6 +6,9 @@
     width: 80px;
     object-fit: contain;
 }
+.icon-davies-logo:before{
+  display: none !important;
+}
 @media (max-width: 768px) and (min-width:300px) {
   .logo-site , .logo-site-image1{
           position: absolute;
