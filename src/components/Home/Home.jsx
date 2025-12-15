@@ -1,21 +1,9 @@
-import React,{ useEffect } from 'react'
-import Swiper from "swiper";
+import React from 'react';
+import HomeProjectSlider from './homeProjectSlider';
 
 
 const Home = () => {
-  useEffect(() => {
-  new Swiper(".swiper-process", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    pagination: {
-      el: ".tf-pag-nav",
-      clickable: true,
-    },
-    allowTouchMove: true,
-  });
-}, []);
-
+  
   return (
     <>
       <main id="wrapper">
@@ -97,7 +85,7 @@ const Home = () => {
         </div>
         {/* /Hero Banner */}
         {/* Select Work */}
-        <div className="section-selected-work flat-spacing pb-0" id="workScroll">
+        {/* <div className="section-selected-work flat-spacing pb-0" id="workScroll">
           <div className="bg-img effectFade fadeUp">
             <img
               loading="lazy"
@@ -117,7 +105,6 @@ const Home = () => {
                     </p>
                     <div className="position-relative effectFade fadeUp no-div">
                       <div className="slick-nav">
-                        {/* Clone 1 */}
                         <div>
                           <p className="text-slide text-display-2 fw-semibold">
                             Future
@@ -133,7 +120,6 @@ const Home = () => {
                             Seeson
                           </p>
                         </div>
-                        {/* Clone 2 */}
                         <div>
                           <p className="text-slide text-display-2 fw-semibold">
                             Future
@@ -165,7 +151,6 @@ const Home = () => {
                 <div className="col-md-8">
                   <div className="col-right">
                     <div className="slick-for">
-                      {/* Clone 1 */}
                       <div>
                         <div className="image effectFade fadeZoom">
                           <img src="/assets/images/section/work-1.jpg" alt="Image" />
@@ -181,7 +166,6 @@ const Home = () => {
                           <img src="/assets/images/section/work-3.jpg" alt="Image" />
                         </div>
                       </div>
-                      {/* Clone 2 */}
                       <div>
                         <div className="image">
                           <img src="/assets/images/section/work-1.jpg" alt="Image" />
@@ -208,7 +192,6 @@ const Home = () => {
               <div className="row">
                 <div className="col-md-4">
                   <ul className="work-tag">
-                    {/* Clone 1 */}
                     <li>
                       <div className="group-btn">
                         <a href="#" className="tf-btn style-2">
@@ -242,7 +225,6 @@ const Home = () => {
                         </a>
                       </div>
                     </li>
-                    {/* Clone 2 */}
                     <li>
                       <div className="group-btn">
                         <a href="#" className="tf-btn style-2">
@@ -300,143 +282,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <HomeProjectSlider/>
         {/* /Select Work */}
-        {/* Feature */}
-        {/* <section className="section-feature flat-spacing tf-btn-swiper-main">
-          <div className="container">
-            <div className="s-header">
-              <h2 className="text-display-2 fw-semibold letter-space--3 effectFade fadeUp">
-                Featured Templates
-              </h2>
-              <a href="#" className="tf-btn">
-                BROWSE ALL
-              </a>
-            </div>
-            <div className="position-relative">
-              <div
-                dir="ltr"
-                className="swiper tf-swiper swiper-feature"
-                data-preview={2}
-                data-tablet={2}
-                data-mobile-sm={1}
-                data-mobile={1}
-                data-space-lg={40}
-                data-space-md={30}
-                data-space={15}
-                data-pagination={1}
-                data-pagination-sm={1}
-                data-pagination-md={2}
-                data-pagination-lg={2}
-              >
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div className="wg-feature-v01 hover-img main-mouse-hover">
-                      <a href="#" className="feature-image img-style">
-                        <img
-                          loading="lazy"
-                          width={628}
-                          height={471}
-                          src="/assets/images/section/feature-1.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                      <div className="feature-content">
-                        <div className="info">
-                          <p className="tag text-white-64 letter-space--1">
-                            Portfolio
-                          </p>
-                          <h5 className="name letter-space--2">
-                            <a href="#" className="link">
-                              Portz
-                            </a>
-                          </h5>
-                        </div>
-                        <h5 className="price letter-space--2 text-primary">$49</h5>
-                      </div>
-                      <div className="tf-mouse">
-                        <a href="#" className="action tf-btn-2">
-                          <i className="icon icon-arrow-long-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="wg-feature-v01 hover-img main-mouse-hover">
-                      <a href="#" className="feature-image img-style">
-                        <img
-                          loading="lazy"
-                          width={628}
-                          height={471}
-                          src="/assets/images/section/feature-2.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                      <div className="feature-content">
-                        <div className="info">
-                          <p className="tag text-white-64 letter-space--1">Agency</p>
-                          <h5 className="name letter-space--2">
-                            <a href="#" className="link">
-                              Agenz
-                            </a>
-                          </h5>
-                        </div>
-                        <h5 className="price letter-space--2 text-primary">$49</h5>
-                      </div>
-                      <div className="tf-mouse">
-                        <a href="#" className="action tf-btn-2">
-                          <i className="icon icon-arrow-long-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide main-mouse-hover">
-                    <div className="wg-feature-v01 hover-img">
-                      <a href="#" className="feature-image img-style">
-                        <img
-                          loading="lazy"
-                          width={628}
-                          height={471}
-                          src="/assets/images/section/feature-1.jpg"
-                          alt="Image"
-                        />
-                      </a>
-                      <div className="feature-content">
-                        <div className="info">
-                          <p className="tag text-white-64 letter-space--1">
-                            Portfolio
-                          </p>
-                          <h5 className="name letter-space--2">
-                            <a href="#" className="link">
-                              Portz
-                            </a>
-                          </h5>
-                        </div>
-                        <h5 className="price letter-space--2 text-primary">$49</h5>
-                      </div>
-                      <div className="tf-mouse">
-                        <a href="#" className="action tf-btn-2">
-                          <i className="icon icon-arrow-long-right" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="group-btn-slider">
-                  <div className="btn-nav-swiper text-caption fw-medium link nav-prev-swiper">
-                    <i className="icon icon-arrow-long-left" />
-                    PREV
-                  </div>
-                  <div className="btn-nav-swiper text-caption fw-medium link nav-next-swiper">
-                    NEXT
-                    <i className="icon icon-arrow-long-right" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        {/* /Feature */}
         {/* Service */}
         <section
           className="section-service-2 overflow-hidden flat-spacing"
@@ -895,183 +743,55 @@ const Home = () => {
               TECH STACK
             </h6>
           </div>
+
           <ul className="tech-stack-list main-action-active">
-            <li className="wg-tech btn-active active">
-              <div className="tech_text letter-space--2">
-                <p className="h1 fw-normal">Figma</p>
-                <h6 className="fw-normal">96%</h6>
-              </div>
-              <div className="infiniteSlide_tech_main">
-                <div className="infiniteSlide infiniteSlide_tech" data-clone={5}>
-                  {/* Clone 1 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Figma</p>
-                      <h6 className="process fw-normal">96%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-figma.png"
-                      alt="Image"
-                    />
-                  </div>
-                  {/* Clone 2 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Figma</p>
-                      <h6 className="process fw-normal">96%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-figma.png"
-                      alt="Image"
-                    />
-                  </div>
-                  {/* Clone 3 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Figma</p>
-                      <h6 className="process fw-normal">96%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-figma.png"
-                      alt="Image"
-                    />
+            {[
+              { name: "HTML", percent: "75%", img: "/public/assets/images/section/hmtl.png" },
+              { name: "CSS", percent: "75%", img: "/public/assets/images/section/css.png" },
+              { name: "JavaScript", percent: "50%", img: "/public/assets/images/section/javascript.png" },
+              { name: "Bootstrap", percent: "72%", img: "/public/assets/images/section/Bootstrap.png" },
+              { name: "Tailwind CSS", percent: "75%", img: "/public/assets/images/section/Tailwind.png" },
+              { name: "MUI", percent: "50%", img: "/public/assets/images/section/MUI.png" },
+              { name: "Shadcn UI", percent: "60%", img: "/public/assets/images/section/Shadcn.png" },
+              { name: "API Integration", percent: "75%", img: "/public/assets/images/section/APIIntegration.png" },
+              { name: "React JS", percent: "70%", img: "/public/assets/images/section/ReactJS.png" },
+              { name: "Next JS", percent: "75%", img: "/public/assets/images/section/NextJS.png" },
+              { name: "Redux", percent: "50%", img: "/public/assets/images/section/Redux.png" },
+            ].map((tech, index) => (
+              <li key={index} className="wg-tech btn-active">
+                <div className="tech_text letter-space--2">
+                  <p className="h1 fw-normal">{tech.name}</p>
+                  <h6 className="fw-normal">{tech.percent}</h6>
+                </div>
+
+                <div className="infiniteSlide_tech_main">
+                  <div className="infiniteSlide infiniteSlide_tech" data-clone={5}>
+                    {[1, 2, 3].map((_, i) => (
+                      <div key={i} className="d-flex align-items-center">
+                        <div className="app_name">
+                          <div className="tech_text letter-space--2">
+                            <p className="h1 text">{tech.name}</p>
+                            <h6 className="process fw-normal">{tech.percent}</h6>
+                          </div>
+                        </div>
+                        <div className="app_icon">
+                          <img
+                            loading="lazy"
+                            width={136}
+                            height={68}
+                            src={tech.img}
+                            alt={tech.name}
+                          />
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </div>
-            </li>
-            <li className="wg-tech btn-active">
-              <div className="tech_text letter-space--2">
-                <p className="h1 fw-normal">Framer</p>
-                <h6 className="fw-normal">98%</h6>
-              </div>
-              <div className="infiniteSlide_tech_main">
-                <div className="infiniteSlide infiniteSlide_tech" data-clone={5}>
-                  {/* Clone 1 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Framer</p>
-                      <h6 className="process fw-normal">98%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-framer.png"
-                      alt="Image"
-                    />
-                  </div>
-                  {/* Clone 2 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Framer</p>
-                      <h6 className="process fw-normal">98%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-framer.png"
-                      alt="Image"
-                    />
-                  </div>
-                  {/* Clone 3 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Framer</p>
-                      <h6 className="process fw-normal">98%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-framer.png"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li className="wg-tech btn-active">
-              <div className="tech_text letter-space--2">
-                <p className="h1 fw-normal">Webflow</p>
-                <h6 className="fw-normal">92%</h6>
-              </div>
-              <div className="infiniteSlide_tech_main">
-                <div className="infiniteSlide infiniteSlide_tech" data-clone={5}>
-                  {/* Clone 1 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Webflow</p>
-                      <h6 className="process fw-normal">92%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-webflow.png"
-                      alt="Image"
-                    />
-                  </div>
-                  {/* Clone 2 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Webflow</p>
-                      <h6 className="process fw-normal">92%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-webflow.png"
-                      alt="Image"
-                    />
-                  </div>
-                  {/* Clone 3 */}
-                  <div className="app_name">
-                    <div className="tech_text letter-space--2">
-                      <p className="h1 text">Webflow</p>
-                      <h6 className="process fw-normal">92%</h6>
-                    </div>
-                  </div>
-                  <div className="app_icon">
-                    <img
-                      loading="lazy"
-                      width={136}
-                      height={68}
-                      src="/assets/images/section/app-webflow.png"
-                      alt="Image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
         </section>
+
         {/* /Tech Stack */}
         {/* Award */}
         <section className="section-award flat-spacing">
@@ -1207,541 +927,6 @@ const Home = () => {
           </div>
         </section>
         {/* /Award */}
-        {/* Testimonial */}
-        <section className="section-testimonial flat-spacing tf-btn-swiper-main">
-          <h6 className="mini-title text-caption text-white-64 text-center">
-            TRUSTED BY FOUNDED
-          </h6>
-          <div
-            dir="ltr"
-            className="swiper tf-swiper swiper-testimonial"
-            data-preview="2.59"
-            data-tablet="2.2"
-            data-mobile-sm="1.5"
-            data-mobile="1.2"
-            data-loop="true"
-            data-center="true"
-            data-space-lg={40}
-            data-space-md={30}
-            data-space={15}
-            data-init={1}
-          >
-            <div className="swiper-wrapper">
-              {/* item 1 */}
-              <div className="swiper-slide">
-                <div className="testimonial-v01">
-                  <div className="tes-author">
-                    <div className="author_image">
-                      <img
-                        loading="lazy"
-                        width={437}
-                        height={328}
-                        src="/assets/images/section/tes-1.jpg"
-                        alt="Image"
-                      />
-                    </div>
-                    <div className="author_info">
-                      <h6 className="info__name text-body-1 letter-space--1">
-                        Ethan Morales
-                      </h6>
-                      <p className="info__duty">
-                        Marketing Director, Horizon Apparel
-                      </p>
-                    </div>
-                  </div>
-                  <div className="br-line" />
-                  <p className="tes-text text-body-1">
-                    Owais reimagined our digital presence. The site is striking,
-                    fast, and intuitive—engaging visitors while clearly expressing our
-                    brand.”
-                  </p>
-                </div>
-              </div>
-              {/* item 2 */}
-              <div className="swiper-slide">
-                <div className="testimonial-v01">
-                  <div className="tes-author">
-                    <div className="author_image">
-                      <img
-                        loading="lazy"
-                        width={437}
-                        height={328}
-                        src="/assets/images/section/tes-2.jpg"
-                        alt="Image"
-                      />
-                    </div>
-                    <div className="author_info">
-                      <h6 className="info__name text-body-1 letter-space--1">
-                        Liam Carter
-                      </h6>
-                      <p className="info__duty">Founder, Arcadia Tech</p>
-                    </div>
-                  </div>
-                  <div className="br-line" />
-                  <p className="tes-text text-body-1">
-                    “Working with Davies was seamless. He nailed our vision and
-                    delivered a modern, functional website that feels distinctly
-                    ours.”
-                  </p>
-                </div>
-              </div>
-              {/* item 3 */}
-              <div className="swiper-slide">
-                <div className="testimonial-v01">
-                  <div className="tes-author">
-                    <div className="author_image">
-                      <img
-                        loading="lazy"
-                        width={437}
-                        height={328}
-                        src="/assets/images/section/tes-3.jpg"
-                        alt="Image"
-                      />
-                    </div>
-                    <div className="author_info">
-                      <h6 className="info__name text-body-1 letter-space--1">
-                        Sofia Carson
-                      </h6>
-                      <p className="info__duty">Product Manager, Lumos Studio</p>
-                    </div>
-                  </div>
-                  <div className="br-line" />
-                  <p className="tes-text text-body-1">
-                    “From first concept to launch, Davies exceeded expectations. Every
-                    choice was intentional, making our platform beautiful and easy to
-                    use.”
-                  </p>
-                </div>
-              </div>
-              {/* item 2 */}
-              <div className="swiper-slide">
-                <div className="testimonial-v01">
-                  <div className="tes-author">
-                    <div className="author_image">
-                      <img
-                        loading="lazy"
-                        width={437}
-                        height={328}
-                        src="/assets/images/section/tes-2.jpg"
-                        alt="Image"
-                      />
-                    </div>
-                    <div className="author_info">
-                      <h6 className="info__name text-body-1 letter-space--1">
-                        Ethan Morales
-                      </h6>
-                      <p className="info__duty">
-                        Marketing Director, Horizon Apparel
-                      </p>
-                    </div>
-                  </div>
-                  <div className="br-line" />
-                  <p className="tes-text text-body-1">
-                    Owais reimagined our digital presence. The site is striking,
-                    fast, and intuitive—engaging visitors while clearly expressing our
-                    brand.”
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="group-btn-slider">
-              <div className="nav-prev-swiper lh-1">
-                <i className="icon icon-arrow-caret-left fs-8" />
-              </div>
-              <div className="sw-dot-default tf-sw-pagination" />
-              <div className="nav-next-swiper lh-1">
-                <i className="icon icon-arrow-caret-right fs-8" />
-              </div>
-            </div>
-          </div>
-          <div className="indicator-wrap flat-spacing">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-4">
-                  <div className="wg-indicator mb-md-0">
-                    <p className="indicate-title text-body-1">
-                      <span className="text-primary">//</span> Projects Delivered
-                    </p>
-                    <p className="indicate-counter wg-counter text-display-1 fw-medium">
-                      <span className="odometer" data-number={40}>
-                        30
-                      </span>{" "}
-                      <span className="text-primary">+</span>
-                    </p>
-                    <p className="indicate-sub">
-                      Creative work that drive <br />
-                      real results
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="wg-indicator mb-md-0">
-                    <p className="indicate-title text-body-1">
-                      <span className="text-primary">//</span> Clients Satisfaction
-                    </p>
-                    <p className="indicate-counter wg-counter text-display-1 fw-medium">
-                      <span className="odometer" data-number={96}>
-                        50
-                      </span>{" "}
-                      <span className="text-primary">%</span>
-                    </p>
-                    <p className="indicate-sub">
-                      I mostly focus on <br />
-                      exceeding expectations
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="wg-indicator mb-0">
-                    <p className="indicate-title text-body-1">
-                      <span className="text-primary">//</span> Years of Experience
-                    </p>
-                    <p className="indicate-counter wg-counter text-display-1 fw-medium">
-                      <span className="odometer" data-number={10}>
-                        2.5
-                      </span>{" "}
-                      <span className="text-primary">+</span>
-                    </p>
-                    <p className="indicate-sub">
-                      Mastering the art of animation <br />
-                      content and design
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="bg-img-item">
-            <img
-              loading="lazy"
-              width={1440}
-              height={800}
-              src="/assets/images/item/grid.png"
-              alt="Image"
-            />
-          </div>
-        </section>
-        {/* /Testimonial */}
-        {/* Pricing */}
-        <section className="section-pricing flat-spacing flat-animate-tab">
-          <div className="bg-img">
-            <img
-              loading="lazy"
-              width={1440}
-              height={1081}
-              src="/assets/images/item/bg-4.png"
-              alt="Image"
-            />
-          </div>
-          <div className="container">
-            <div className="s-header justify-content-center">
-              <h2 className="text-display-2 letter-space--3 effectFade fadeUp">
-                Pricing made easy
-              </h2>
-            </div>
-            <ul className="pricing-tab_btn" role="tablist">
-              <li className="nav-tab-item" role="presentation">
-                <a
-                  href="#monthly"
-                  data-bs-toggle="tab"
-                  className="tf-btn-tab fw-medium letter-space--1 active"
-                >
-                  <span className="dot-active" />
-                  Monthly
-                </a>
-              </li>
-              <li className="nav-tab-item" role="presentation">
-                <a
-                  href="#annual"
-                  data-bs-toggle="tab"
-                  className="tf-btn-tab fw-medium letter-space--1"
-                >
-                  <span className="dot-active" />
-                  <span>
-                    Annualy - <span className="text-primary">Save 20%</span>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <div className="tab-content">
-              <div className="tab-pane active show" id="monthly" role="tabpanel">
-                <div className="tf-grid-layout md-col-2 lg-col-3">
-                  <div className="wg-plan">
-                    <div className="br-line" />
-                    <p className="plan-name letter-space--1 fw-medium">Basic</p>
-                    <h4 className="plan-price">
-                      $640{" "}
-                      <span className="text-body-2 fw-normal text-white-64 letter-space--1">
-                        /month
-                      </span>
-                    </h4>
-                    <p className="plan-desc text-white-64">
-                      Perfect for early-stage teams or startups ready to launch their
-                      first online presence.
-                    </p>
-                    <a
-                      href="#contactScroll"
-                      className="btn-action tf-btn style-troke w-100"
-                    >
-                      <span className="text-caption fw-medium">CHOOSE THIS PLAN</span>
-                    </a>
-                    <ul className="benefit-list tf-list vertical">
-                      <li className="benefit_title text-white-64">
-                        What’s included:
-                      </li>
-                      <li>
-                        <span>//</span> Custom website design
-                      </li>
-                      <li>
-                        <span>//</span> Responsive layouts
-                      </li>
-                      <li>
-                        <span>//</span> Basic SEO setup
-                      </li>
-                      <li>
-                        <span>//</span> Tool integrations
-                      </li>
-                      <li>
-                        <span>//</span> Ongoing support
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="wg-plan style-2">
-                    <div className="bg-img bg-img_1 d-xl-block" />
-                    <div className="bg-img bg-img_2">
-                      <img
-                        loading="lazy"
-                        width={416}
-                        height={625}
-                        src="/assets/images/item/bg-2.png"
-                        alt="Image"
-                      />
-                    </div>
-                    <div className="br-line bg-primary" />
-                    <p className="plan-name letter-space--1 fw-medium">Pro</p>
-                    <h4 className="plan-price">
-                      <span>
-                        <span className="text-primary">$</span>1,280
-                      </span>
-                      <span className="text-body-2 fw-normal text-white-64 letter-space--1">
-                        /month
-                      </span>
-                    </h4>
-                    <p className="plan-desc text-white-64">
-                      Ideal for growing brands that require added features and
-                      enhanced creative flexibility.
-                    </p>
-                    <a
-                      href="#contactScroll"
-                      className="btn-action tf-btn style-fill w-100 animate-btn animate-dark"
-                    >
-                      <span className="text-caption fw-medium">CHOOSE THIS PLAN</span>
-                    </a>
-                    <ul className="benefit-list tf-list vertical">
-                      <li className="benefit_title text-white-64">
-                        What’s included:
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Advanced web design
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Interactive elements
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Full SEO services
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> E-commerce setup
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Monthly reports
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="wg-plan style-2">
-                    <div className="bg-img bg-img_1" />
-                    <div className="br-line bg-white" />
-                    <p className="plan-name letter-space--1 fw-medium">Max</p>
-                    <h4 className="plan-price">
-                      $2,560{" "}
-                      <span className="text-body-2 fw-normal text-white-64 letter-space--1">
-                        /month
-                      </span>
-                    </h4>
-                    <p className="plan-desc text-white-64">
-                      Designed for established companies seeking a completely bespoke
-                      digital solution.
-                    </p>
-                    <a
-                      href="#contactScroll"
-                      className="btn-action tf-btn style-fill-white w-100 animate-btn animate-dark"
-                    >
-                      <span className="text-caption fw-medium">CHOOSE THIS PLAN</span>
-                    </a>
-                    <ul className="benefit-list tf-list vertical">
-                      <li className="benefit_title text-white-64">
-                        What’s included:
-                      </li>
-                      <li>
-                        <span>//</span> Complete branding
-                      </li>
-                      <li>
-                        <span>//</span> Premium visuals
-                      </li>
-                      <li>
-                        <span>//</span> Enterprise systems
-                      </li>
-                      <li>
-                        <span>//</span> Dedicated manager
-                      </li>
-                      <li>
-                        <span>//</span> Priority support
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="tab-pane" id="annual" role="tabpanel">
-                <div className="tf-grid-layout md-col-2 lg-col-3">
-                  <div className="wg-plan">
-                    <div className="br-line" />
-                    <p className="plan-name letter-space--1 fw-medium">Basic</p>
-                    <h4 className="plan-price">
-                      $6,400{" "}
-                      <span className="text-body-2 fw-normal text-white-64 letter-space--1">
-                        /annual
-                      </span>
-                    </h4>
-                    <p className="plan-desc text-white-64">
-                      Perfect for early-stage teams or startups ready to launch their
-                      first online presence.
-                    </p>
-                    <a
-                      href="#contactScroll"
-                      className="btn-action tf-btn style-troke w-100"
-                    >
-                      <span className="text-caption fw-medium">CHOOSE THIS PLAN</span>
-                    </a>
-                    <ul className="benefit-list tf-list vertical">
-                      <li className="benefit_title text-white-64">
-                        What’s included:
-                      </li>
-                      <li>
-                        <span>//</span> Custom website design
-                      </li>
-                      <li>
-                        <span>//</span> Responsive layouts
-                      </li>
-                      <li>
-                        <span>//</span> Basic SEO setup
-                      </li>
-                      <li>
-                        <span>//</span> Tool integrations
-                      </li>
-                      <li>
-                        <span>//</span> Ongoing support
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="wg-plan style-2">
-                    <div className="bg-img bg-img_1 d-xl-block" />
-                    <div className="bg-img bg-img_2">
-                      <img
-                        loading="lazy"
-                        width={416}
-                        height={625}
-                        src="/assets/images/item/bg-2.png"
-                        alt="Image"
-                      />
-                    </div>
-                    <div className="br-line bg-primary" />
-                    <p className="plan-name letter-space--1 fw-medium">Pro</p>
-                    <h4 className="plan-price">
-                      <span>
-                        <span className="text-primary">$</span>12,800
-                      </span>
-                      <span className="text-body-2 fw-normal text-white-64 letter-space--1">
-                        /annual
-                      </span>
-                    </h4>
-                    <p className="plan-desc text-white-64">
-                      Ideal for growing brands that require added features and
-                      enhanced creative flexibility.
-                    </p>
-                    <a
-                      href="#contactScroll"
-                      className="btn-action tf-btn style-fill w-100 animate-btn animate-dark"
-                    >
-                      <span className="text-caption fw-medium">CHOOSE THIS PLAN</span>
-                    </a>
-                    <ul className="benefit-list tf-list vertical">
-                      <li className="benefit_title text-white-64">
-                        What’s included:
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Advanced web design
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Interactive elements
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Full SEO services
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> E-commerce setup
-                      </li>
-                      <li>
-                        <span className="text-primary">//</span> Monthly reports
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="wg-plan style-2">
-                    <div className="bg-img bg-img_1" />
-                    <div className="br-line bg-white" />
-                    <p className="plan-name letter-space--1 fw-medium">Max</p>
-                    <h4 className="plan-price">
-                      $25,600{" "}
-                      <span className="text-body-2 fw-normal text-white-64 letter-space--1">
-                        /annual
-                      </span>
-                    </h4>
-                    <p className="plan-desc text-white-64">
-                      Designed for established companies seeking a completely bespoke
-                      digital solution.
-                    </p>
-                    <a
-                      href="#contactScroll"
-                      className="btn-action tf-btn style-fill-white w-100 animate-btn animate-dark"
-                    >
-                      <span className="text-caption fw-medium">CHOOSE THIS PLAN</span>
-                    </a>
-                    <ul className="benefit-list tf-list vertical">
-                      <li className="benefit_title text-white-64">
-                        What’s included:
-                      </li>
-                      <li>
-                        <span>//</span> Complete branding
-                      </li>
-                      <li>
-                        <span>//</span> Premium visuals
-                      </li>
-                      <li>
-                        <span>//</span> Enterprise systems
-                      </li>
-                      <li>
-                        <span>//</span> Dedicated manager
-                      </li>
-                      <li>
-                        <span>//</span> Priority support
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* /Pricing */}
         {/* Faq */}
         <section className="section-faq flat-spacing">
           <div className="container">
@@ -1919,7 +1104,7 @@ const Home = () => {
                   <div className="col-left">
                     <a href="index.html" className="logo-custom">
                       <div className="logo-site-sv">
-                        <img style={{width:65,height:50}} src="/assets/images/logo/logo.png" alt="" />
+                        <img style={{ width: 65, height: 50 }} src="/assets/images/logo/logo.png" alt="" />
                       </div>
                       <span className="line-vertical left" />
                       <span className="line-vertical right" />
@@ -2020,8 +1205,19 @@ const Home = () => {
                     </button>
                     <p className="text-body-1">
                       SEY HELLO -{" "}
-                      <a href="#" className="text-primary">
+                      <a
+                        href="mailto:owaisofficial22@gmail.com?subject=Contact&body=Hello Owais,"
+                        className="text-primary"
+                      >
                         OWAISOFFICIAL22@GMAIL.COM
+                      </a>
+                      <br />
+                      Contact -{" "}
+                      <a
+                        href="tel:+923190319990"
+                        className="text-primary"
+                      >
+                        0319-0319990
                       </a>
                     </p>
                   </div>
@@ -2160,17 +1356,12 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="right">
-                  <a href="#" className="tf-link-icon text-caption link">
+                  <a
+                    href="tel:+923190319990"
+                    className="tf-link-icon text-caption link"
+                  >
                     <i className="icon icon-arrow-top-right" />
-                    TWITTER (X)
-                  </a>
-                  <a href="#" className="tf-link-icon text-caption link">
-                    <i className="icon icon-arrow-top-right" />
-                    DRIBBBLE
-                  </a>
-                  <a href="#" className="tf-link-icon text-caption link">
-                    <i className="icon icon-arrow-top-right" />
-                    LINKEDIN
+                    +923-1903-1999-0
                   </a>
                 </div>
               </div>

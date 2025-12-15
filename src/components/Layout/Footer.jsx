@@ -53,17 +53,7 @@ const Footer = () => {
                             <div className="col-6 col-sm-4 col-md-3">
                                 <ul className="footer-menu-list mb-0">
                                     <li>
-                                        <a href="#" className="link letter-space--2 h5">
-                                            Twitter (X)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="link letter-space--2 h5">
-                                            Dribbble
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="link letter-space--2 h5">
+                                        <a href="https://pk.linkedin.com/in/owais-khan-0b44973a0" target='_blank' className="link letter-space--2 h5">
                                             LinkedIn
                                         </a>
                                     </li>
