@@ -746,22 +746,22 @@ const Home = () => {
 
           <ul className="tech-stack-list main-action-active">
             {[
-              { name: "HTML", percent: "75%", img: "/assets/images/section/hmtl.png" },
-              { name: "CSS", percent: "75%", img: "/assets/images/section/css.png" },
-              { name: "JavaScript", percent: "50%", img: "/assets/images/section/javascript.png" },
-              { name: "Bootstrap", percent: "72%", img: "/assets/images/section/Bootstrap.png" },
-              { name: "Tailwind CSS", percent: "75%", img: "/assets/images/section/Tailwind.png" },
-              { name: "MUI", percent: "50%", img: "/assets/images/section/MUI.png" },
-              { name: "Shadcn UI", percent: "60%", img: "/assets/images/section/Shadcn.png" },
-              { name: "API Integration", percent: "75%", img: "/assets/images/section/APIIntegration.png" },
-              { name: "React JS", percent: "70%", img: "/assets/images/section/ReactJS.png" },
-              { name: "Next JS", percent: "75%", img: "/assets/images/section/NextJS.png" },
-              { name: "Redux", percent: "50%", img: "/assets/images/section/Redux.png" },
+              { name: "HTML", img: "/assets/images/section/hmtl.png" },
+              { name: "CSS", img: "/assets/images/section/css.png" },
+              { name: "JavaScript", img: "/assets/images/section/javascript.png" },
+              { name: "Bootstrap", img: "/assets/images/section/Bootstrap.png" },
+              { name: "Tailwind CSS", img: "/assets/images/section/Tailwind.png" },
+              { name: "MUI", img: "/assets/images/section/MUI.png" },
+              { name: "Shadcn UI", img: "/assets/images/section/Shadcn.png" },
+              { name: "API Integration", img: "/assets/images/section/APIIntegration.png" },
+              { name: "React JS", img: "/assets/images/section/ReactJS.png" },
+              { name: "Next JS", img: "/assets/images/section/NextJS.png" },
+              { name: "Redux", img: "/assets/images/section/Redux.png" },
             ].map((tech, index) => (
               <li key={index} className="wg-tech btn-active">
                 <div className="tech_text letter-space--2">
                   <p className="h1 fw-normal">{tech.name}</p>
-                  <h6 className="fw-normal">{tech.percent}</h6>
+                  {/* <h6 className="fw-normal">{tech.percent}</h6> */}
                 </div>
 
                 <div className="infiniteSlide_tech_main">
