@@ -137,14 +137,14 @@ const HomeProjectSlider = () => {
               </ul>
             </div>
 
-            <div className="col-6 col-md-4">
+            {/* <div className="col-6 col-md-4">
               <div className="group-btn-slider">
                 <div className="btn-nav-swiper nav-prev-swiper">PREV</div>
                 <div className="btn-nav-swiper nav-next-swiper">NEXT</div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-6 col-md-4">
+            <div className="col-12 col-md-12">
               <div className="col-right">
                 <p className="text-display-2 fw-semibold">
                   20<span className="text-primary">25</span>
