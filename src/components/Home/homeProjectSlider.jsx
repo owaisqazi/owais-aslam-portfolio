@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
-import '../../../public/assets/js/carousel'; // make sure slick is imported
+import $ from 'jquery';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel';
+
 
 const HomeProjectSlider = () => {
   useEffect(() => {
